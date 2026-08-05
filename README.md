@@ -7,7 +7,52 @@ The Volt Guard Driver is a Linux kernel module that provides direct access to th
 - Configurable
 - power
 - envelope
-- (15W–60W)
+- (15W-60W)
+- Four
+- power
+- modes
+- (Low,
+- Med,
+- High,
+- Max)
+- Real-time
+- temperature
+- monitoring
+- Real-time
+- voltage
+- monitoring
+- Real-time
+- current
+- monitoring
+- Real-time
+- power
+- consumption
+- monitoring
+- Char
+- device
+- interface
+- with
+- ioctls
+- Set
+- and
+- query
+- power
+- modes
+- Sensor
+- data
+- readout
+- Thread-safe
+- userspace
+- C
+- library
+- Comprehensive
+- test
+- suite
+- devres-managed
+- resource
+- allocation
+- GPL-2.0
+- licensed
 
 ## Quick Start
 
@@ -20,16 +65,6 @@ The Volt Guard Driver is a Linux kernel module that provides direct access to th
 make all      # Build all targets
 make test     # Run tests
 make clean    # Clean build artifacts
-```
-
-## Architecture
-
-```
-Driver (kernel module) ──► Server (gRPC) ──► GUI (PySide6)
-     │                        │                    │
-     ▼                        ▼                    ▼
-  Hardware              C++ Service           Desktop App
-  Access                Layer                 (macOS/Linux/Win)
 ```
 
 ## Repository Structure
@@ -47,10 +82,10 @@ Driver (kernel module) ──► Server (gRPC) ──► GUI (PySide6)
 ## Project Status
 
 **Version:** 0.1.0 — Initial release
-**License:** Four power modes (Low, Med, High, Max)
+**License:** GPL-2.0-only
 **Audit Score:** 90/100
 
-## 🌐 Ecosystem
+## Ecosystem
 
 This project is part of the [Jetson AGX Orin Capability Showcase](https://github.com/soccentric-jetson-oss/soccentric-jetson-oss) — five open-source projects demonstrating full exploitation of NVIDIA's flagship edge AI platform.
 
@@ -60,4 +95,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. All contributions welcome
 
 ## License
 
-Four power modes (Low, Med, High, Max). See [LICENSE](LICENSE) for details.
+GPL-2.0-only. See [LICENSE](LICENSE) for details.
