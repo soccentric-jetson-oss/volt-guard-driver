@@ -39,4 +39,4 @@ static const struct class vg_class={.name=DRV_NAME,.owner=THIS_MODULE};
 static int __init vg_init(void){int r=class_register(&vg_class);if(r)return r;r=platform_driver_register(&vg_driver);if(r)class_unregister(&vg_class);pr_info("Volt Guard v%s\n",DRV_VERSION);return r;}
 static void __exit vg_exit(void){platform_driver_unregister(&vg_driver);class_unregister(&vg_class);}
 module_init(vg_init);module_exit(vg_exit);
-MODULE_AUTHOR("Sandesh <sandesh@soccentric.com>");MODULE_DESCRIPTION("Jetson AGX Orin power management driver");MODULE_LICENSE("GPL v2");MODULE_VERSION(DRV_VERSION);
+MODULE_AUTHOR("Sandesh Ghimire <sandesh@soccentric.com>");MODULE_DESCRIPTION("Jetson AGX Orin power management driver");MODULE_LICENSE("GPL v2");MODULE_VERSION(DRV_VERSION);
